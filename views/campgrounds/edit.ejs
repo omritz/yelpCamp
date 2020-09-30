@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="text-center">
+        <h1>Edit <%=campground.name%></h1>
+        <form action="/campgrounds/<%=campground._id%>?_method=PUT" method="POST">
+            <input class="mx-auto form-control form-group col-md-4" type="text" name="campground[name]" value="<%=campground.name%>">
+            <input class="mx-auto form-control form-group col-md-4" type="text" name="campground[image]" value="<%=campground.image%>">
+            <input class="mx-auto form-control form-group col-md-4" type="text" name="campground[price]" value="<%=campground.price%>">
+            <input class="mx-auto form-control form-group col-md-4" type="text" name="campground[description]" value="<%=campground.description%>">
+            <button class="mx-auto btn btn-primary btn-lg btn-block form-group col-md-4" type="submit">Submit!</button>
+        </form>
+        <a href="/campgrounds">Go back</a>
+    </div>
+
+</div>
+
+<% include ../partials/footer %>

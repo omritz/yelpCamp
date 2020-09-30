@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="text-center">
+        <h1 >Create a new Campground</h1>
+        <form action="/campgrounds" method="POST">
+            <input class="mx-auto form-control form-group col-md-4" type="text" name="name" placeholder="name">
+            <input class="mx-auto form-control form-group col-md-4" type="text" name="image" placeholder="image url">
+            <input class="mx-auto form-control form-group col-md-4" type="text" name="price" placeholder="price - $/night">
+            <input class="mx-auto form-control form-group col-md-4" type="text" name="description" placeholder="description">
+            <button class="mx-auto btn btn-primary btn-lg btn-block form-group col-md-4" type="submit">Submit!</button>
+        </form> 
+        <a href="/campgrounds">Go back</a>
+    </div>
+
+</div>
+
+<% include ../partials/footer %>
